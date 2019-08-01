@@ -1,0 +1,32 @@
+create database name -
+
+    create database rangodb;
+
+verify your connection -    run command (python manage.py shell)
+
+    from django.db import connection
+    c=connection.cursor()
+    print(c)
+
+create a model -
+
+
+after running the models -
+    run command - makemigrations
+    run command - migrate
+    run command - sqlmigrate app_name 0001
+
+put all the values -
+    from app_name.Models import model_name
+    a=company(information)
+    print(a)
+
+ username - wagh1234
+ email    - wagh@gmail.com
+ password - wagh1234567
+
+admin.py
+
+      from.models import company
+        # Register your models here.
+      admin.site.register(company)
